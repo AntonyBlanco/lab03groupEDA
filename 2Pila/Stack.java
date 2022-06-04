@@ -6,7 +6,7 @@ public class Stack<E> {
 	}
 	public boolean empty() {
 	// Retorna verdadero si la pila esta vacia
-		return false;
+		return root == null;
 	}
 	public E peek() {
 	// Retorna el objeto en el tope de la pila
@@ -16,11 +16,12 @@ public class Stack<E> {
 	// Elimina el objeto en el tope de la pila y lo retorna
 		return null;
 	}
-	public E push() {
+	public E push(E item) {
 	// Coloca un objeto en el tope de la pila
-		return null;
+		this.root = new Node<E>(item, this.root);
+		return item;
 	}
-	public int search() {
+	public int search(Object o) {
 	// Retorna la posicion basada en 1 del objeto en la pila
 		return 0;
 	}
