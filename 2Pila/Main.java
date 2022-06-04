@@ -3,22 +3,19 @@ public class Main{
 		Stack<String> pilaStr = new Stack<String>();
 		
 		System.out.println(pilaStr);
-		System.out.println(pilaStr.empty());
+		System.out.println(pilaStr.top());
 		
 		pilaStr.push("a");
 		
 		System.out.println(pilaStr);
-		System.out.println(pilaStr.empty());
+		System.out.println(pilaStr.top());
 		
 		pilaStr.push("b");
 		pilaStr.push("da");
-		pilaStr.push("test");
-		pilaStr.push("o");
-		pilaStr.push("hola");
-		pilaStr.push("z");
+		pilaStr.push("testTop");
 		
 		System.out.println(pilaStr);
-		System.out.println(pilaStr.empty());
+		System.out.println("Elemento en el tope: " + pilaStr.top());
 		
 	}
 }
