@@ -21,9 +21,10 @@ public class Stack<E> {
 		}
 		return this.root.getData();
 	}
-	public E pop() {
+	public Stack<E> pop() {
 	// Devuelve la pila sin el elemento superior
-		return null;
+		this.root = this.root.getNext();
+		return this;
 	}
 	public E push(E item) {
 	// Toma un elemento y lo empuja encima de una pila existente
