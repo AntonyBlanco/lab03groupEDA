@@ -1,6 +1,6 @@
 public class Stack<E> {
 	private Node<E> root;
-
+	
 	public Stack() {
 		root = null;
 	}
@@ -23,6 +23,15 @@ public class Stack<E> {
 	public int search() {
 	// Retorna la posicion basada en 1 del objeto en la pila
 		return 0;
+	}
+	
+	public String toString() {
+		String str = "";
+		for(Node<E> nodo = this.root; nodo != null; nodo = nodo.getNext()) {
+			str += nodo.getData() + " > ";
+		}
+		str += "]";
+		return str;
 	}
 }
 
