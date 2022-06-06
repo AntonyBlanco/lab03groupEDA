@@ -79,7 +79,7 @@ Para pode entender este ejercicio debemos antes imaginar cual es el procedimient
     }
 ```
 
-Blalalallaa mas explicación
+Blalalallaa mas explicación de ejercicio1
 
 #
 ### Ejercicio 2: PILAS
