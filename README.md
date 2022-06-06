@@ -147,7 +147,8 @@ Con esta serie de bucles logramos obtener la altura minima en donde sean igualas
 Más arriba hacemos mencion de que solo necesita ejecutar el programa para poder tener una vision amplia de la resolución del ejercicio, y es verdad, pero podemos pasar a detallar un poco, y es que en la primera parte de la clase Main, declaramos 3 arreglos de tipo entero, ellos alamcenaran las alturas de cada cilindro, mas adelante con ayuda de metodos adicionales que implementamos es que llenamos de forma interactiva cada arreglo (imprimiendo las indicaciones del caso):
 
 <div align="center">
- ![Ejecucion](Imagenes%20para%20informe//Ejercicio1-ejecuci%C3%B3n.png)
+
+![Ejecucion](Imagenes%20para%20informe//Ejercicio1-ejecuci%C3%B3n.png)
 </div>
 
 #
