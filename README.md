@@ -87,9 +87,172 @@ Blalalallaa mas explicación de ejercicio1
 Para pode entender este ejercicio debemos antes imaginar cual es el procedimiento que deberia la computadora cuando se tengan las tres pilas, entonces, para esto identificamos una factor importante, el saber que pila tiene la menor altura
 
 #
-### Ejercicio 1: COLAS
+### Ejercicio 3: COLAS
 
-Para pode entender este ejercicio debemos antes imaginar cual es el procedimiento que deberia la computadora cuando se tengan las tres pilas, entonces, para esto identificamos una factor importante, el saber que pila tiene la menor altura
+Para poder implementar una cola primeramente debemos crear nuestra clase Node que sera generica.
+```sh
+    public class Node<E>{
+        private E data;
+        private Node<E> next;
+
+        public Node(E data,Node<E> next) {
+                this.data=data;
+                this.next=next;
+        }
+        public Node(E data) {
+                this(data,null);
+        }
+        public E getData() {
+                return this.data;
+        }
+        public void setData(E data) {
+                this.data=data;
+        }
+        public Node<E> getNext() {
+                return this.next;
+        }
+        public void setNext(Node<E> next) {
+                this.next=next;
+        }
+        public String toString() {
+                return this.data.toString();
+        }
+
+```
+
+Como siguiente paso creamos nuestra Interfaz con los metodos a implementar de la cola.
+```sh
+    public interface Queue<E> {
+    boolean isEmpty();
+    int size();
+    void enqueue (E info);
+    E dequeue();
+    E front();
+    E back();
+
+   }
+
+```
+Seguidamente creamos una clase donde implementareamos cada uno de los metodos.
+```sh
+    public class QueueLink<E> implements Queue<E> {
+
+        private Node<E> front;
+        private Node<E> back;
+        private int size;
+
+        //Constructor de la cola
+        public QueueLink() {
+        this.front = this.back = null;
+        this.size = 0;
+        }
+
+        //Comprueba si la cola esta vacia
+        public boolean isEmpty() {
+                return this.front == null;
+        }
+
+        //Retorna el tamaño de la cola
+        public int size() {
+                return size;
+        }
+
+        //Agregamos un elemento a la cola
+        public void enqueue(E x) {
+                // TODO Auto-generated method stub
+                Node<E> n = new Node<E>(x, null);
+        if (isEmpty()) {
+            front = n;
+        } else {
+            back.setNext(n);
+        }
+        back= n;
+        size++;
+        }
+
+        //Eliminamos el primer elemento de la cola
+        public E dequeue() {
+                 E x;
+                if (!isEmpty()) {
+                    x = front.getData();
+                    front = front.getNext();
+                    size--;
+                    if (isEmpty()){
+                        back = null;
+                    }
+                } else {
+                    x = null;
+                }
+                return x;
+        }
+ //Retorna el primer elemento de la cola
+        public E front() {
+                E x;
+        if (isEmpty()) {
+            x = null;
+        } else {
+            x = front.getData();
+        }
+        return x;
+        }
+
+        //Retorna el ultimo elemento de la cola
+        public E back() {
+                E x;
+        if (isEmpty()) {
+            x = null;
+        } else {
+            x = back.getData();
+        }
+        return x;
+        }
+
+        public String toString(){
+        String cadena = "[";
+        Node<E> n = front;
+        while (n != null){
+            cadena += n.getData() +",";
+            n = n.getNext();
+        }
+        return cadena +"]";
+    }
+
+}
+
+```
+Finalmente comprobaremos la funcionalidad de nuestra cola con cada uno de los metodos por medio de un test.
+```sh
+    public class Test {
+	public static void main(String[] args){
+        
+		//Cola de numeros 
+        QueueLink<Integer> test = new QueueLink<>();
+        
+        test.enqueue(4);
+        test.enqueue(10);
+        test.enqueue(15);
+        test.enqueue(20);
+        test.enqueue(25);
+        test.enqueue(30);
+        
+        System.out.println("* TEST 1 *");
+        System.out.println("");
+        System.out.println("La cola esta vacia: "+test.isEmpty());
+        System.out.println("El tamaño es: "+test.size());
+        
+        System.out.println(test); 
+        
+        System.out.println("Primero: "+test.front());
+        System.out.println("Ultimo: "+test.back());
+        
+        System.out.println("Desencolar: "+test.dequeue());
+        
+        System.out.println(test);        
+          
+    }
+}
+
+```
 
 #
 <div align="center">
