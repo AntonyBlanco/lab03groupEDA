@@ -104,7 +104,23 @@ Para pode entender este ejercicio debemos antes imaginar cual es el procedimient
 
 - ¿En que casos seria favorable/desfavorable utilizar Pila/Cola?
 
-    Bueno, haciendo el estudio bibliografico correspondiente, se nos señala que las pilas son útiles a la hora de implementar por ejemplo el muy comun retroceso de acciones (ctrl +z) de varias apliacaciones, asi como tambien los ides y derivados usan esta herramienta para determinar cuando una llave esta cerrada o no.
+    Favorable uso de las Pilas
+
+    Haciendo el estudio bibliografico correspondiente, se nos señala que las pilas son útiles a la hora de implementar por ejemplo el muy comun retroceso de acciones (ctrl + z) de varias aplicaciones.
+    Tambien los IDEs y derivados usan esta herramienta para determinar cuando una llave esta cerrada o no, por ejemplo en las estructuras de seleccion y iterativas anidadas.
+    De la misma manera podemos usarlo para poder leer un lenguaje con una gramática que contiene reglas recursivas, por ejemplo el uso de los paréntesis y funciones en las expresiones matemáticas de las calculadoras, algo relacionado se refiere a los autómatas de pila.
+
+    Desfavorable uso de las Pilas
+
+    Las pilas a primera instancia podriamos usarlas para guardar información que no requiera de un orden, pero para ello ya tenemos las listas o arreglos dinámicos.
+
+    Favorable uso de las Colas
+
+    Las colas se utilizan en las computadoras cuando se ejecutan diversos procesos que deben ser realizados en orden.
+
+    Desfavorable uso de las Colas
+
+    ...
 
 #
 <div align="center">
@@ -112,9 +128,9 @@ Para pode entender este ejercicio debemos antes imaginar cual es el procedimient
 </div>
 
 #
--   Los conceptos solo teoricos de pilas ayudaron con la posibilidad de resolver la igulación de pilas.
+-   Los conceptos solo teoricos de pilas ayudaron con la posibilidad de resolver la igualación de pilas.
 
--   blala
+-   Las colas y pilas se van a utilizar como una solución precisa para diversos problemas de administración de la información así como la ordenada ejecución de procesos
 
 -   dfdfs
 
