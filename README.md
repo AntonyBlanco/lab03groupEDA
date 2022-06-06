@@ -92,7 +92,7 @@ Las pilas se declararon con el tipo de variable static para un mejor manejo más
 Partimos de una base de metodo propuesto:
 
 ```sh 
-public static int equalStack(int h1[] , int h2[], int h3[]){
+    public static int equalStack(int h1[] , int h2[], int h3[]){
     ...
 } 
 ``` 
@@ -125,7 +125,7 @@ htotal1, htotal2 y htotal3, son las alturas totales de cada pila de cilindros y 
 Antes de esto es necesario declarar una variable (pilaMinima)la que almacenara la altura minima de entre todas las pilas (ver lineas 21 y 39):
 
 ```sh 
-pilaMinima = Math.min(htotal1,Math.min(htotal2,htotal3))
+    pilaMinima = Math.min(htotal1,Math.min(htotal2,htotal3))
 ```
 
 Ahora, dentro del bucle while, vamos tambien a iniciar tambien bucles while cuya funcion es determinar cuando una pila tiene una altura mayor a la minima y asi eliminar el elemento de más arriba, tenemos:
@@ -141,6 +141,10 @@ Ahora, dentro del bucle while, vamos tambien a iniciar tambien bucles while cuya
 En esa sección hicimos la comparacion con htotal1 y pilaMinima, y este procedimiento se repetirá con htotal2, htotal3 para compararse con pilaMinima
 
 Con esta serie de bucles logramos obtener la altura minima en donde sean igualas todas las pilas.
+
+-   Ejecución:
+
+Más arriba hacemos mencion de que solo necesita ejecutar el programa para poder tener una vision amplia de la resolución del ejercicio, y es verdad, pero podemos pasar a detallar un poco, y es que en la primera parte de la clase Main, declaramos 3 arreglos de tipo entero, ellos alamcenaran las alturas de cada cilindro, mas adelante con ayuda de metodos adicionales que implementamos es que llenamos de forma interactiva cada arreglo (imprimiendo las indicaciones del caso)
 
 #
 ### Ejercicio 2: PILAS
