@@ -55,70 +55,88 @@
         Mg. Richart Smith Escobedo Quispe
         </td>
     </tr>
-</tdbody>
 </table>
 
-<table>
-    <theader>
-        <tr>
-            <th style="text-align:center">SOLUCIÓN Y RESULTADOS</th>
-        </tr>
-    </theader>
-    <tbody>
-        <tr>
-            <td>
-            I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-                <ul>
-                    <li>Colocar ejercicios</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            II. SOLUCIÓN DEL CUESTIONARIO<br>
-                <ul>
-                    <li>Colocar preguntas y respuestas</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            III. CONCLUSIONES<br>
-                <ul>
-                    <li>Colocar conclusiones</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+#
+<div align="center">
+    <span style="font-weight:bold;"><h2>I. SOLUCIÓN Y RESULTADOS </h2></span>
+</div>
 
-<table>
-    <theader>
-        <tr>
-            <th style="text-align:center">RETROALIMENTACIÓN GENERAL</th>
-        </tr>
-    </theader>
-    <tbody>
-        <tr>
-            <td>
-            </td>
-        </tr>
-    </tbody>
-</table>
+#
+## SOLUCIÓN DE EJERCICIOS/PROBLEMAS
 
-<table>
-    <theader>
-        <tr>
-            <th style="text-align:center">REFERENCIAS Y BIBLIOGRAFÍA</th>
-        </tr>
-    </theader>
-    <tbody>
-        <tr>
-            <td>
-                <ul>
-                    <li>Lista</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+#
+### Ejercicio 1: PILAS IGUALES
+
+Para pode entender este ejercicio debemos antes imaginar cual es el procedimiento que deberia la computadora cuando se tengan las tres pilas, entonces, para esto identificamos una factor importante, el saber que pila tiene la menor altura
+
+```sh 
+    public int[] rotarIzquierdaArray(int[] A){
+    /** */
+    //Procedimiento para rotar la matriz
+    /** */
+    return Aiz;
+    }
+```
+
+Blalalallaa mas explicación de ejercicio1
+
+#
+### Ejercicio 2: PILAS
+
+Para pode entender este ejercicio debemos antes imaginar cual es el procedimiento que deberia la computadora cuando se tengan las tres pilas, entonces, para esto identificamos una factor importante, el saber que pila tiene la menor altura
+
+#
+### Ejercicio 1: COLAS
+
+Para pode entender este ejercicio debemos antes imaginar cual es el procedimiento que deberia la computadora cuando se tengan las tres pilas, entonces, para esto identificamos una factor importante, el saber que pila tiene la menor altura
+
+#
+<div align="center">
+    <span style="font-weight:bold;"><h2>II. SOLUCIÓN DEL CUESTIONARIO </h2></span>
+</div>
+
+#
+
+- ¿Qué similitudes hay entre una Lista Enlazada y una Pila?
+
+    Basicamente ambas estan basadas en un a 
+
+- ¿En que casos seria favorable/desfavorable utilizar Pila/Cola?
+
+    Bueno, haciendo el estudio bibliografico correspondiente, se nos señala que las pilas son útiles a la hora de implementar por ejemplo el muy comun retroceso de acciones (ctrl +z) de varias apliacaciones, asi como tambien los ides y derivados usan esta herramienta para determinar cuando una llave esta cerrada o no.
+
+#
+<div align="center">
+    <span style="font-weight:bold;"><h2>III. CONCLUSIONES </h2></span>
+</div>
+
+#
+-   Los conceptos solo teoricos de pilas ayudaron con la posibilidad de resolver la igulación de pilas.
+
+-   blala
+
+-   dfdfs
+
+#
+<div align="center">
+    <span style="font-weight:bold;"><h2>RETROALIMENTACIÓN </h2></span>
+</div>
+
+#
+
+-   
+
+#
+<div align="center">
+    <span style="font-weight:bold;"><h2>REFERENCIAS Y BIBLIOGRAFÍA </h2></span>
+</div>
+
+#
+
+-   https://www.w3schools.com/java/
+-   https://www.eclipse.org/downloads/packages/release/2022-03/r/eclipse-ide-enterprise-java-and-web-developers
+-   https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+-   https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
+   
+    
