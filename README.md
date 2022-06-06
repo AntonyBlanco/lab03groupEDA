@@ -365,8 +365,6 @@ Finalmente comprobaremos la funcionalidad de nuestra cola con cada uno de los me
 
 -   Las colas y pilas se van a utilizar como una solución precisa para diversos problemas de administración de la información así como la ordenada ejecución de procesos
 
--   dfdfs
-
 #
 <div align="center">
     <span style="font-weight:bold;"><h2>RETROALIMENTACIÓN </h2></span>
