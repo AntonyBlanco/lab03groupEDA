@@ -44,7 +44,7 @@ public class PilasIguales {
 	            while(htotal1 > pilaMinima){
 	                htotal1 -= pila1.pop();
 	            }
-	            pilaMinima = Math.min(htotal1,Math.min(htotal2,htotal3)); //Recalculate min
+	            pilaMinima = Math.min(htotal1,Math.min(htotal2,htotal3)); //Actualizamos Minimo
 	 
 	          //Retira los cilindros de la pila 2 hasta que su altura sea <= a la más pequeña
 	            while(htotal2 > pilaMinima){
